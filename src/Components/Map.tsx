@@ -93,7 +93,7 @@ export const Map = (props: MapProps) => {
             />
           </Geolocation>
         </Navigation>
-        <Pins data={filteredPins} onClick={onClickPin} onHover={() => {}} />
+        <Pins data={filteredPins} onClick={onClickPin} mapRef={mapRef} />
       </ReactMapGL>
     </div>
   );
