@@ -46,7 +46,7 @@ export const Map = (props: MapProps) => {
         onViewStateChange={setViewState}
         ref={mapRef}
         style={{ zIndex: 50, position: "relative" }}
-        mapStyle="mapbox://styles/mapbox/streets-v11"
+        mapStyle="mapbox://styles/mapbox/streets-v11?optimize=true"
         mapboxApiAccessToken={MAPBOX_TOKEN}
       >
         <Navigation>
